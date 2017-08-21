@@ -22,3 +22,4 @@ beforeEach(function(done) {
     return done();
   });
 });
+console.log("foobar")
