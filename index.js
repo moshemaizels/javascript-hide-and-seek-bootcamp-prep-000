@@ -14,7 +14,7 @@ function increaseRankBy(n) {
 //  console.log(ranked.length)
   for (var i = 0; i < ranked.length; i++) {
     var rankedInside = ranked[i].querySelectorAll('li')
-    console.log(rankedInside)
+    console.log("loop " + i)
     //console.log(rankedInside.length)
     //var r = ranked[i].querySelectorAll('li')
     for (var i = 0; i < rankedInside.length; i++) {
