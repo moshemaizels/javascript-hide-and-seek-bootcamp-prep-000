@@ -11,7 +11,7 @@ function increaseRankBy(n) {
  console.log("first")
   //var rankedList = ranked.querySelectorAll("li")
   var ranked = document.getElementById("app").querySelectorAll('ul.ranked-list')
-//  console.log(ranked.length)
+  console.log("ranked length " + ranked.length)
   for (var i = 0; i < ranked.length; i++) {
     var rankedInside = ranked[i].querySelectorAll('li')
     console.log("loop " + i)
