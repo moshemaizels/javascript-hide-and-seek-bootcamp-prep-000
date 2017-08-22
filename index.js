@@ -8,10 +8,21 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
+ console.log("first")
+  //var rankedList = ranked.querySelectorAll("li")
   var ranked = document.getElementById("app").querySelectorAll('ul.ranked-list')
+  console.log(ranked.length)
   for (var i = 0; i < ranked.length; i++) {
-    ranked[i].innerHTML = parseInt(ranked[i].innerHTML) + n
-    //console.log(ranked[i].innerHTML)
+    var rankedInside = ranked[i]
+    console.log(rankedInside.length)
+    //var r = ranked[i].querySelectorAll('li')
+    for (var i = 0; i < rankedInside.length; i++) {
+      rankedInside.querySelectorAll('li')[i].innerHTML = 75
+      console.log("here")
+    //  r.querySelectorAll('li')[i].innerHTML = parseInt(r.querySelectorAll('li')[i].innerHTML)+ n
+    }
+    //ranked[i].innerHTML = parseInt(ranked[i].innerHTML) + n
+
   }
 }
 
